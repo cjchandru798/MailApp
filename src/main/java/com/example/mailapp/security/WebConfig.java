@@ -14,7 +14,8 @@ public class WebConfig {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
                                 "http://localhost:3003",
-                                "https://mail-app-react-iyol-ih0yowcir-hemachandirans-projects.vercel.app"
+                                "https://mail-app-react-abc1234-hemachandirans-projects.vercel.app/"
+
                         )
 
                         .allowedMethods("*")
