@@ -12,7 +12,11 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:3003")
+                        .allowedOrigins(
+                                "http://localhost:3003",
+                                "https://mail-app-react.vercel.app"
+                        )
+
                         .allowedMethods("*")
                         .allowedHeaders("*")
                         .allowCredentials(true);
