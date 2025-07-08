@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/mailapp-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose the port Spring Boot runs on
-EXPOSE 8080
+EXPOSE 8081
 
 # Run the jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
