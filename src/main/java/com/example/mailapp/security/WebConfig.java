@@ -18,7 +18,8 @@ public class WebConfig {
 
                         )
 
-                        .allowedMethods("*")
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS") // ✅ Include OPTIONS
+
                         .allowedHeaders("*")
                         .allowCredentials(true);
             }
